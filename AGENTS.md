@@ -28,3 +28,4 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+- IPTV channel list lives in src/data/channels.json (extracted from the original HTML app); edit channels there, not in components.

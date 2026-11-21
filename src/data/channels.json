@@ -1,0 +1,1208 @@
+[
+ {
+  "id": "arabic-0",
+  "name": "MBC 1",
+  "logo": "https://i.imgur.com/CiA3plN.png",
+  "description": "قناة MBC 1 - برامج عربية متنوعة",
+  "quality": "FHD",
+  "url": "https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-1",
+  "name": "MBC 2",
+  "logo": "https://i.imgur.com/n9mSHuP.png",
+  "description": "قناة MBC 2 - أفلام أجنبية مترجمة",
+  "quality": "HD",
+  "url": "https://edge66.magictvbox.com/liveApple/MBC_2/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-2",
+  "name": "MBC 3",
+  "logo": "https://i.imgur.com/PVt8OPN.png",
+  "description": "قناة MBC 3 - برامج أطفال",
+  "quality": "FHD",
+  "url": "https://shls-mbc3-prod-dub.shahid.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-3",
+  "name": "MBC 4",
+  "logo": "https://i.imgur.com/BcXASJp.png",
+  "description": "قناة MBC 4 - برامج ومسلسلات أجنبية",
+  "quality": "FHD",
+  "url": "https://shls-masr-prod-dub.shahid.net/out/v1/c08681f81775496ab4afa2bac7ae7638/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-4",
+  "name": "MBC 5",
+  "logo": "https://i.imgur.com/fRWaDyF.png",
+  "description": "قناة MBC 5 - محتوى مغربي",
+  "quality": "FHD",
+  "url": "https://shls-mbc5-prod-dub.shahid.net/out/v1/2720564b6a4641658fdfb6884b160da2/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-5",
+  "name": "MBC Action",
+  "logo": "https://i.imgur.com/4Q9Z1ZB.png",
+  "description": "قناة MBC Action - أفلام ومسلسلات أكشن",
+  "quality": "FHD",
+  "url": "https://shls-mbcaction-prod-dub.shahid.net/out/v1/5e5e7c1b5e5e4e1e1e5e7c1b5e5e4e1e/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-6",
+  "name": "MBC Max",
+  "logo": "https://i.imgur.com/5Q9Z1ZB.png",
+  "description": "قناة MBC Max - أفلام أجنبية",
+  "quality": "FHD",
+  "url": "https://shls-mbcmax-prod-dub.shahid.net/out/v1/6e6e7c1b6e6e4e1e2e6e7c1b6e6e4e1e/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-7",
+  "name": "MBC Drama",
+  "logo": "https://i.imgur.com/g5PWnqp.png",
+  "description": "قناة MBC Drama - دراما عربية",
+  "quality": "FHD",
+  "url": "https://mbc1-enc.edgenextcdn.net/out/v1/b0b3a0e6750d4408bb86d703d5feffd1/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-8",
+  "name": "MBC Masr 1",
+  "logo": "https://i.imgur.com/o2elx0u.png",
+  "description": "قناة MBC Masr 1 - محتوى مصري",
+  "quality": "FHD",
+  "url": "https://shls-masr-prod-dub.shahid.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-9",
+  "name": "MBC Masr 2",
+  "logo": "https://i.imgur.com/KHo7Gtn.png",
+  "description": "قناة MBC Masr 2 - محتوى مصري منوع",
+  "quality": "FHD",
+  "url": "https://shls-masr2-prod-dub.shahid.net/out/v1/f683685242b549f48ea8a5171e3e993a/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-10",
+  "name": "MBC Bollywood",
+  "logo": "https://i.imgur.com/TTAGFHG.png",
+  "description": "قناة MBC Bollywood - أفلام ومسلسلات هندية",
+  "quality": "FHD",
+  "url": "https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-11",
+  "name": "MBC Iraq",
+  "logo": "https://i.imgur.com/D0LxiPE.png",
+  "description": "قناة MBC العراق - محتوى عراقي منوع",
+  "quality": "FHD",
+  "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-12",
+  "name": "MBC Persia",
+  "logo": "https://i.imgur.com/9Q9Z1ZB.png",
+  "description": "قناة MBC Persia - أفلام ومسلسلات فارسية",
+  "quality": "FHD",
+  "url": "https://shls-mbcpersia-prod-dub.shahid.net/out/v1/aeae7c1baea4e1e6aeae7c1baea4e1e/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-13",
+  "name": "MBC+ Drama",
+  "logo": "https://i.imgur.com/lxWdjXG.png",
+  "description": "قناة MBC+ Drama",
+  "quality": "FHD",
+  "url": "https://mbcplusdrama-prod-dub-enc.edgenextcdn.net/out/v1/97ca0ce6fc6142f4b14c0a694af59eab/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-14",
+  "name": "MBC Masr Drama",
+  "logo": "https://media0070.elcinema.com/tvguide/1399_1.png",
+  "description": "قناة MBC Masr Drama",
+  "quality": "FHD",
+  "url": "https://shls-live-enc.edgenextcdn.net/out/v1/08eca926a78a41339b8010c882410307/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-15",
+  "name": "Rotana Cinema Egypt",
+  "logo": "https://i.imgur.com/dGlKoLW.png",
+  "description": "روتانا سينما مصر",
+  "quality": "FHD",
+  "url": "https://rotana.hibridcdn.net/rotana/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-16",
+  "name": "Rotana Cinema KSA",
+  "logo": "https://i.imgur.com/pGgp38I.png",
+  "description": "روتانا سينما السعودية",
+  "quality": "FHD",
+  "url": "https://bcovlive-a.akamaihd.net/9527a892aeaf43019fd9eeb77ad1516e/eu-central-1/6057955906001/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-17",
+  "name": "Rotana Khalijia",
+  "logo": "https://i.imgur.com/6HMluzv.png",
+  "description": "روتانا خليجية",
+  "quality": "FHD",
+  "url": "https://rotana.hibridcdn.net/rotana/khaleejiya_net-7Y83PP5adWixDF93/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-18",
+  "name": "Rotana Drama",
+  "logo": "https://i.imgur.com/btnhPjZ.png",
+  "description": "روتانا دراما",
+  "quality": "FHD",
+  "url": "https://rotana.hibridcdn.net/rotana/drama_net-7Y83PP5adWixDF93/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-19",
+  "name": "Rotana Classic",
+  "logo": "https://i.imgur.com/pMMUvkt.png",
+  "description": "روتانا كلاسيك",
+  "quality": "FHD",
+  "url": "https://bcovlive-a.akamaihd.net/0debf5648e584e5fb795c3611c5c0252/eu-central-1/6057955906001/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-20",
+  "name": "Rotana Comedy",
+  "logo": "https://i.imgur.com/IlT8U6S.png",
+  "description": "روتانا كوميدي",
+  "quality": "FHD",
+  "url": "https://rotana.hibridcdn.net/rotana/comedy_net-7Y83PP5adWixDF93/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-21",
+  "name": "Rotana Aflam Plus",
+  "logo": "https://i.imgur.com/0wxwMjs.png",
+  "description": "روتانا أفلام بلس",
+  "quality": "FHD",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/rotana-aflam-plus/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-22",
+  "name": "Al Saudiya",
+  "logo": "https://i.imgur.com/GRQTndk.png",
+  "description": "القناة السعودية الأولى - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-saudi-tv/2ad66056b51fd8c1b624854623112e43/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-23",
+  "name": "SBC",
+  "logo": "https://i.imgur.com/9JSQglj.png",
+  "description": "قناة SBC - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-sbc/90e09c0c28db26435799b4a14892a167/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-24",
+  "name": "Al Quran Al Kareem TV",
+  "logo": "https://i.imgur.com/A2fJysM.png",
+  "description": "قناة القرآن الكريم من مكة",
+  "quality": "FHD",
+  "url": "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-25",
+  "name": "Al Sunnah Al Nabawiyah TV",
+  "logo": "https://i.imgur.com/S6LcTJv.png",
+  "description": "قناة السنة النبوية من المدينة",
+  "quality": "FHD",
+  "url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-26",
+  "name": "Al Saudiya Alaan",
+  "logo": "https://i.imgur.com/sEOjApe.png",
+  "description": "قناة السعودية الآن",
+  "quality": "FHD",
+  "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-ksa-now/71ed3aa814c643306c0a8bc4fcc7d17f/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-27",
+  "name": "Saudi Thaqafiya TV",
+  "logo": "https://i.imgur.com/juM3k8B.jpg",
+  "description": "القناة الثقافية السعودية",
+  "quality": "FHD",
+  "url": "https://thaqafeyyah-ak.akamaized.net/out/v1/f6851f68ada94f82ae6b64a441eb5ab1/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-28",
+  "name": "Abu Dhabi Aloula",
+  "logo": "https://i.imgur.com/g7IRorO.jpeg",
+  "description": "قناة أبوظبي الأولى - برامج متنوعة",
+  "quality": "FHD",
+  "url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/AbuDhabiChannel/HLS/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-29",
+  "name": "Abu Dhabi Emirates",
+  "logo": "https://i.imgur.com/OT6DW3E.png",
+  "description": "قناة الإمارات - محتوى إماراتي متنوع",
+  "quality": "FHD",
+  "url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/EmiratesChannel/HLS/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-30",
+  "name": "Dubai TV",
+  "logo": "https://i.imgur.com/wZMkKF7.png",
+  "description": "تلفزيون دبي - برامج متنوعة",
+  "quality": "FHD",
+  "url": "https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-31",
+  "name": "Sama Dubai",
+  "logo": "https://i.imgur.com/bF6I3N1.jpg",
+  "description": "سما دبي",
+  "quality": "FHD",
+  "url": "https://dmieigthvllta.cdn.mgmlcdn.com/samadubaiht/smil:samadubai.stream.smil/chunklist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-32",
+  "name": "Sharjah TV",
+  "logo": "https://i.imgur.com/tq5Aj9i.png",
+  "description": "قناة الشارقة",
+  "quality": "FHD",
+  "url": "https://svs.itworkscdn.net/smc1live/smc1.smil/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-33",
+  "name": "Ajman TV",
+  "logo": "https://i.imgur.com/hVNIwgE.png",
+  "description": "تلفزيون عجمان - برامج محلية",
+  "quality": "FHD",
+  "url": "https://cdn1.logichost.in/ajmantv/live/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-34",
+  "name": "Fujairah TV",
+  "logo": "https://i.imgur.com/D2tOhbE.png",
+  "description": "تلفزيون الفجيرة",
+  "quality": "HD",
+  "url": "https://live.kwikmotion.com/fujairahlive/fujairah.smil/playlist.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-35",
+  "name": "Kuwait TV 1",
+  "logo": "https://i.imgur.com/0QwQwQw.png",
+  "description": "قناة الكويت الأولى - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://stream.kwt.gov.kw/kwt1/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-36",
+  "name": "Al Majlis",
+  "logo": "https://i.imgur.com/1QwQwQw.png",
+  "description": "قناة المجلس - تلفزيون مجلس الأمة الكويتي",
+  "quality": "FHD",
+  "url": "https://stream.kwt.gov.kw/majlis/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-37",
+  "name": "Bahrain TV",
+  "logo": "https://i.imgur.com/8QwQwQw.png",
+  "description": "قناة البحرين الأولى - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://stream.bahrain.bh/bahrain1/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-38",
+  "name": "Bahrain Sports",
+  "logo": "https://i.imgur.com/9QwQwQw.png",
+  "description": "قناة البحرين الرياضية",
+  "quality": "FHD",
+  "url": "https://stream.bahrain.bh/sports/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-39",
+  "name": "Bahrain Quran",
+  "logo": "https://i.imgur.com/0RwQwQw.png",
+  "description": "قناة البحرين قرآن",
+  "quality": "FHD",
+  "url": "https://stream.bahrain.bh/quran/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-40",
+  "name": "Oman TV",
+  "logo": "https://i.imgur.com/3RwQwQw.png",
+  "description": "قناة عمان العامة - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://stream.oman.om/omantv/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-41",
+  "name": "Oman Cultural",
+  "logo": "https://i.imgur.com/4RwQwQw.png",
+  "description": "قناة عمان الثقافية",
+  "quality": "FHD",
+  "url": "https://stream.oman.om/cultural/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-42",
+  "name": "Oman Sports",
+  "logo": "https://i.imgur.com/5RwQwQw.png",
+  "description": "قناة عمان الرياضية",
+  "quality": "FHD",
+  "url": "https://stream.oman.om/sports/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-43",
+  "name": "Qatar TV",
+  "logo": "https://i.imgur.com/8RwQwQw.png",
+  "description": "قناة قطر الأولى - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://stream.qatar.qa/qatartv/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-44",
+  "name": "Qatar 2",
+  "logo": "https://i.imgur.com/9RwQwQw.png",
+  "description": "قناة قطر الثانية",
+  "quality": "FHD",
+  "url": "https://stream.qatar.qa/qatar2/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-45",
+  "name": "Al Rayyan TV",
+  "logo": "https://i.imgur.com/0SwQwQw.png",
+  "description": "قناة الريان",
+  "quality": "FHD",
+  "url": "https://stream.rayyan.tv/rayyan/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-46",
+  "name": "Sudan TV",
+  "logo": "https://i.imgur.com/5SwQwQw.png",
+  "description": "قناة السودان - برامج منوعة",
+  "quality": "FHD",
+  "url": "https://stream.sudan.sd/sudantv/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-47",
+  "name": "Blue Nile TV",
+  "logo": "https://i.imgur.com/6SwQwQw.png",
+  "description": "قناة النيل الأزرق",
+  "quality": "FHD",
+  "url": "https://stream.bluenile.tv/bluenile/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-48",
+  "name": "Al Shorooq TV",
+  "logo": "https://i.imgur.com/7SwQwQw.png",
+  "description": "قناة الشروق السودانية",
+  "quality": "FHD",
+  "url": "https://stream.shorooq.tv/shorooq/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-49",
+  "name": "Masr Al Oula",
+  "logo": "https://i.imgur.com/1WwQwQw.png",
+  "description": "قناة مصر الأولى",
+  "quality": "FHD",
+  "url": "https://stream.masr.tv/masr1/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-50",
+  "name": "Nile TV",
+  "logo": "https://i.imgur.com/2WwQwQw.png",
+  "description": "قناة النيل",
+  "quality": "FHD",
+  "url": "https://stream.nile.tv/nile/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-51",
+  "name": "Al Hayat",
+  "logo": "https://i.imgur.com/3WwQwQw.png",
+  "description": "قناة الحياة",
+  "quality": "FHD",
+  "url": "https://stream.alhayat.tv/alhayat/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-52",
+  "name": "Al Aoula",
+  "logo": "https://i.imgur.com/4WwQwQw.png",
+  "description": "القناة المغربية الأولى",
+  "quality": "FHD",
+  "url": "https://stream.alaoula.ma/alaoula/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-53",
+  "name": "2M",
+  "logo": "https://i.imgur.com/5WwQwQw.png",
+  "description": "قناة 2M المغربية",
+  "quality": "FHD",
+  "url": "https://stream.2m.ma/2m/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-54",
+  "name": "Tunisia Nat 1",
+  "logo": "https://i.imgur.com/6WwQwQw.png",
+  "description": "قناة تونس الوطنية",
+  "quality": "FHD",
+  "url": "https://stream.tunisia.tv/tunisia1/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-55",
+  "name": "Al Hiwar Ettounsi",
+  "logo": "https://i.imgur.com/7WwQwQw.png",
+  "description": "قناة الحوار التونسي",
+  "quality": "FHD",
+  "url": "https://stream.hiwar.tv/hiwar/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-56",
+  "name": "ENTV",
+  "logo": "https://i.imgur.com/8WwQwQw.png",
+  "description": "القناة الجزائرية الأولى",
+  "quality": "FHD",
+  "url": "https://stream.entv.dz/entv/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-57",
+  "name": "Echorouk TV",
+  "logo": "https://i.imgur.com/9WwQwQw.png",
+  "description": "قناة الشروق الجزائرية",
+  "quality": "FHD",
+  "url": "https://stream.echorouk.tv/echorouk/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-58",
+  "name": "Libya TV",
+  "logo": "https://i.imgur.com/0XwQwQw.png",
+  "description": "قناة ليبيا الرسمية",
+  "quality": "FHD",
+  "url": "https://stream.libya.tv/libya/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "arabic-59",
+  "name": "218 TV",
+  "logo": "https://i.imgur.com/1XwQwQw.png",
+  "description": "قناة 218 الليبية",
+  "quality": "FHD",
+  "url": "https://stream.218tv.net/218/index.m3u8",
+  "category": "arabic"
+ },
+ {
+  "id": "news-60",
+  "name": "Al Arabiya",
+  "logo": "https://i.imgur.com/NXFkYFj.png",
+  "description": "قناة العربية الإخبارية",
+  "quality": "FHD",
+  "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-61",
+  "name": "Al Jazeera",
+  "logo": "https://i.imgur.com/El2hhYb.png",
+  "description": "قناة الجزيرة الإخبارية",
+  "quality": "FHD",
+  "url": "https://live-hls-v3-aja.getaj.net/AJA-V3/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-62",
+  "name": "AL24 News",
+  "logo": "https://i.imgur.com/vyVEXYL.png",
+  "description": "أخبار على مدار الساعة",
+  "quality": "FHD",
+  "url": "https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/playlist.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-63",
+  "name": "Al Alam",
+  "logo": "https://i.imgur.com/Zdi31dy.png",
+  "description": "قناة العالم الإخبارية",
+  "quality": "HD",
+  "url": "https://live2.alalam.ir/alalam.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-64",
+  "name": "TRT Arabi",
+  "logo": "https://i.imgur.com/dEfI2M9.png",
+  "description": "قناة تي آر تي العربية",
+  "quality": "FHD",
+  "url": "http://185.234.111.229:8000/play/a002",
+  "category": "news"
+ },
+ {
+  "id": "news-65",
+  "name": "Sky News Arabia",
+  "logo": "https://i.imgur.com/kF7TvcH.png",
+  "description": "سكاي نيوز عربية - أخبار على مدار الساعة",
+  "quality": "FHD",
+  "url": "https://stream.skynewsarabia.com/hls/sna.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-66",
+  "name": "BBC Arabic",
+  "logo": "https://i.imgur.com/oFGPG9Y.png",
+  "description": "قناة بي بي سي عربي",
+  "quality": "FHD",
+  "url": "https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd",
+  "category": "news"
+ },
+ {
+  "id": "news-67",
+  "name": "France 24 Arabic",
+  "logo": "https://i.imgur.com/61MSiq9.png",
+  "description": "فرانس 24 بالعربية",
+  "quality": "FHD",
+  "url": "https://live.france24.com/live/F24_AR_HLS_TLS/live_tv.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-68",
+  "name": "DW Arabic",
+  "logo": "https://i.imgur.com/EfKe3ae.png",
+  "description": "قناة دويتشه فيله عربية",
+  "quality": "FHD",
+  "url": "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-69",
+  "name": "AlEkhbariya",
+  "logo": "https://i.imgur.com/WcRlHQm.png",
+  "description": "قناة الإخبارية السعودية",
+  "quality": "FHD",
+  "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-70",
+  "name": "Bahrain News",
+  "logo": "https://i.imgur.com/1RwQwQw.png",
+  "description": "قناة البحرين الإخبارية",
+  "quality": "FHD",
+  "url": "https://stream.bahrain.bh/news/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-71",
+  "name": "Oman Mubasher",
+  "logo": "https://i.imgur.com/6RwQwQw.png",
+  "description": "قناة عمان مباشر",
+  "quality": "FHD",
+  "url": "https://stream.oman.om/mubasher/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-72",
+  "name": "Qatar News",
+  "logo": "https://i.imgur.com/2SwQwQw.png",
+  "description": "قناة قطر الإخبارية",
+  "quality": "FHD",
+  "url": "https://stream.qatar.qa/news/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-73",
+  "name": "Sudania 24 News",
+  "logo": "https://i.imgur.com/8SwQwQw.png",
+  "description": "سودانية 24 الإخبارية",
+  "quality": "FHD",
+  "url": "https://stream.sudania24.sd/news/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-74",
+  "name": "Nile News",
+  "logo": "https://i.imgur.com/2XwQwQw.png",
+  "description": "قناة النيل للأخبار",
+  "quality": "FHD",
+  "url": "https://stream.nile.tv/news/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-75",
+  "name": "CBC News",
+  "logo": "https://i.imgur.com/3XwQwQw.png",
+  "description": "قناة CBC إخبارية",
+  "quality": "FHD",
+  "url": "https://stream.cbc.tv/cbcnews/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-76",
+  "name": "Medi 1 TV",
+  "logo": "https://i.imgur.com/4XwQwQw.png",
+  "description": "قناة ميدي 1 تي في",
+  "quality": "FHD",
+  "url": "https://stream.medi1tv.com/medi1/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-77",
+  "name": "Tunisia News",
+  "logo": "https://i.imgur.com/5XwQwQw.png",
+  "description": "قناة تونس الإخبارية",
+  "quality": "FHD",
+  "url": "https://stream.tunisia.tv/news/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-78",
+  "name": "ENTV News",
+  "logo": "https://i.imgur.com/6XwQwQw.png",
+  "description": "القناة الجزائرية الإخبارية",
+  "quality": "FHD",
+  "url": "https://stream.entv.dz/news/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "news-79",
+  "name": "Libya 24",
+  "logo": "https://i.imgur.com/7XwQwQw.png",
+  "description": "قناة ليبيا 24 الإخبارية",
+  "quality": "FHD",
+  "url": "https://stream.libya24.tv/libya24/index.m3u8",
+  "category": "news"
+ },
+ {
+  "id": "entertainment-80",
+  "name": "Rotana Cinema",
+  "logo": "https://i.imgur.com/pZyKaUH.png",
+  "description": "أفضل الأفلام العربية",
+  "quality": "FHD",
+  "url": "https://shls-rotanacinema-egy-prod-dub.shahid.net/out/v1/c39c0ecbcbdb46e890e91106776397a8/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-81",
+  "name": "Wanasah",
+  "logo": "https://i.imgur.com/nLtiXNf.png",
+  "description": "قناة الموسيقى والترفيه",
+  "quality": "FHD",
+  "url": "https://shls-wanasah-prod-dub.shahid.net/out/v1/c84ef3128e564b74a6a796e8b6287de6/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-82",
+  "name": "Weyyak Action",
+  "logo": "https://content.weyyak.com/207c8580-318d-ea11-831d-02d662556796/poster-image",
+  "description": "أفلام ومسلسلات الأكشن",
+  "quality": "FHD",
+  "url": "https://weyyak-live.akamaized.net/weyyak_action/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-83",
+  "name": "Weyyak Drama",
+  "logo": "https://content.weyyak.com/d995517f-bc87-ea11-831d-02d662556796/poster-image",
+  "description": "الدراما العربية والعالمية",
+  "quality": "HD",
+  "url": "https://weyyak-live.akamaized.net/weyyak_drama/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-84",
+  "name": "Aghapy Kids",
+  "logo": "https://i.imgur.com/8ariztD.png",
+  "description": "قناة للأطفال",
+  "quality": "FHD",
+  "url": "https://5b622f07944df.streamlock.net/aghapykids.tv/aghapykids2/playlist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-85",
+  "name": "Thikrayat TV",
+  "logo": "https://i.imgur.com/AKa1X9d.png",
+  "description": "قناة ذكريات السعودية",
+  "quality": "FHD",
+  "url": "https://al-ekhbaria-prod-dub.shahid.net/out/v1/ef87956651694f4ba2ccc16e852dbb95/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-86",
+  "name": "Rotana Classic",
+  "logo": "https://i.imgur.com/pGz2q7z.png",
+  "description": "أفلام ومسلسلات كلاسيكية",
+  "quality": "FHD",
+  "url": "https://shls-rotanaclassic-prod-dub.shahid.net/out/v1/4eebed211c8441228321b4f67a46c5a5/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-87",
+  "name": "Rotana Comedy",
+  "logo": "https://i.imgur.com/IlT8U6S.png",
+  "description": "أفضل الأفلام الكوميدية",
+  "quality": "FHD",
+  "url": "https://rotanastudios-rotanacomedy-1-eu.xiaomi.wurl.tv/playlist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-88",
+  "name": "Cartoon Network Arabic",
+  "logo": "https://i.imgur.com/mT3mCCK.png",
+  "description": "قناة كرتون نتورك بالعربية",
+  "quality": "FHD",
+  "url": "https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-89",
+  "name": "Spacetoon",
+  "logo": "https://i.imgur.com/RzPOwqI.png",
+  "description": "قناة سبيستون للأطفال",
+  "quality": "FHD",
+  "url": "https://shls-spacetoon-prod-dub.shahid.net/out/v1/6240b773a3f34cca95d119f9e76aec02/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-90",
+  "name": "Rotana Music",
+  "logo": "https://rotanaradios.com/wp-content/uploads/2024/10/Asset-4.png",
+  "description": "روتانا موسيقى",
+  "quality": "HD",
+  "url": "rtmp://live.restream.io/pull/play_320121_94512612fd0e084bd284",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-91",
+  "name": "Rotana Clip",
+  "logo": "https://i.imgur.com/nhREk0o.png",
+  "description": "روتانا كليب",
+  "quality": "FHD",
+  "url": "https://rotana.hibridcdn.net/rotana/clip_net-7Y83PP5adWixDF93/playlist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-92",
+  "name": "Ajyal TV",
+  "logo": "https://i.imgur.com/i6Y7beR.jpg",
+  "description": "قناة أجيال السعودية للأطفال",
+  "quality": "HD",
+  "url": "http://htvmada.mada.ps:8888/ajyal/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-93",
+  "name": "Quran Radio",
+  "logo": "https://i.imgur.com/ut0kr4x.png",
+  "description": "إذاعة القرآن الكريم السعودية",
+  "quality": "FHD",
+  "url": "https://live.kwikmotion.com/sbrksaquranradiolive/srpksaquranradio/playlist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-94",
+  "name": "Saudia Radio",
+  "logo": "https://i.imgur.com/CvrR7wW.png",
+  "description": "إذاعة السعودية",
+  "quality": "FHD",
+  "url": "https://live.kwikmotion.com/sbrksasaudiaradiolive/srpksasaudiaradio/playlist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-95",
+  "name": "Majid TV",
+  "logo": "https://i.imgur.com/TzOKMMy.png",
+  "description": "قناة ماجد للأطفال",
+  "quality": "FHD",
+  "url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/MajidChildrenChannel/HLS/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-96",
+  "name": "Dubai One",
+  "logo": "https://i.imgur.com/6G6fxs5.png",
+  "description": "دبي وان - ترفيه وأفلام أجنبية",
+  "quality": "FHD",
+  "url": "https://dmieigthvllta.cdn.mgmlcdn.com/dubaioneht/smil:dubaione.stream.smil/chunklist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-97",
+  "name": "Noor Dubai",
+  "logo": "https://i.imgur.com/DLe7ZuM.png",
+  "description": "نور دبي",
+  "quality": "FHD",
+  "url": "https://dmiffthftl.cdn.mangomolo.com/noordubaitv/smil:noordubaitv.smil/chunklist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-98",
+  "name": "Dubai Racing",
+  "logo": "https://i.imgur.com/BpcV8jS.png",
+  "description": "دبي ريسينج",
+  "quality": "FHD",
+  "url": "https://dmisdracta.cdn.mgmlcdn.com/events/smil:events.stream.smil/chunklist.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-99",
+  "name": "Bahrain Kids",
+  "logo": "https://i.imgur.com/2RwQwQw.png",
+  "description": "قناة البحرين للأطفال",
+  "quality": "FHD",
+  "url": "https://stream.bahrain.bh/kids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-100",
+  "name": "Oman Kids",
+  "logo": "https://i.imgur.com/7RwQwQw.png",
+  "description": "قناة أطفال عمان",
+  "quality": "FHD",
+  "url": "https://stream.oman.om/kids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-101",
+  "name": "Jeem TV",
+  "logo": "https://i.imgur.com/3SwQwQw.png",
+  "description": "قناة جيم للأطفال",
+  "quality": "FHD",
+  "url": "https://stream.jeemtv.qa/jeem/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-102",
+  "name": "Al Rayyan 2",
+  "logo": "https://i.imgur.com/4SwQwQw.png",
+  "description": "الريان 2 الترفيهي",
+  "quality": "FHD",
+  "url": "https://stream.rayyan.tv/rayyan2/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-103",
+  "name": "Angham TV",
+  "logo": "https://i.imgur.com/9SwQwQw.png",
+  "description": "أنغام السودانية",
+  "quality": "FHD",
+  "url": "https://stream.angham.sd/angham/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-104",
+  "name": "Sanabel Kids",
+  "logo": "https://i.imgur.com/0TwQwQw.png",
+  "description": "سنابل للأطفال",
+  "quality": "FHD",
+  "url": "https://stream.sanabel.sd/kids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-105",
+  "name": "DMC",
+  "logo": "https://i.imgur.com/8XwQwQw.png",
+  "description": "قناة دي إم سي",
+  "quality": "FHD",
+  "url": "https://stream.dmc.tv/dmc/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-106",
+  "name": "Nickelodeon Kids",
+  "logo": "https://i.imgur.com/9XwQwQw.png",
+  "description": "نكلوديون للأطفال",
+  "quality": "FHD",
+  "url": "https://stream.nickelodeon.tv/nickelodeon/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-107",
+  "name": "Nessma TV",
+  "logo": "https://i.imgur.com/0YwQwQw.png",
+  "description": "قناة نسمة",
+  "quality": "FHD",
+  "url": "https://stream.nessma.tv/nessma/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-108",
+  "name": "Mini Kids",
+  "logo": "https://i.imgur.com/1YwQwQw.png",
+  "description": "ميني كيدز للأطفال",
+  "quality": "FHD",
+  "url": "https://stream.minikids.tv/minikids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-109",
+  "name": "Telecom TV",
+  "logo": "https://i.imgur.com/2YwQwQw.png",
+  "description": "تيليكوم التونسية",
+  "quality": "FHD",
+  "url": "https://stream.telecom.tn/telecom/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-110",
+  "name": "Tunis Kids",
+  "logo": "https://i.imgur.com/3YwQwQw.png",
+  "description": "قناة الأطفال التونسية",
+  "quality": "FHD",
+  "url": "https://stream.tunisiakids.tv/tunisiakids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-111",
+  "name": "Canal Algerie",
+  "logo": "https://i.imgur.com/4YwQwQw.png",
+  "description": "كنال ألجيري",
+  "quality": "FHD",
+  "url": "https://stream.canalalgerie.tv/canalalgerie/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-112",
+  "name": "DZ Kids",
+  "logo": "https://i.imgur.com/5YwQwQw.png",
+  "description": "قناة الأطفال الجزائرية",
+  "quality": "FHD",
+  "url": "https://stream.dzkids.tv/dzkids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-113",
+  "name": "Libya Sport",
+  "logo": "https://i.imgur.com/6YwQwQw.png",
+  "description": "ليبيا سبورت",
+  "quality": "FHD",
+  "url": "https://stream.libyasport.tv/libyasport/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "entertainment-114",
+  "name": "Libya Kids",
+  "logo": "https://i.imgur.com/7YwQwQw.png",
+  "description": "قناة الأطفال الليبية",
+  "quality": "FHD",
+  "url": "https://stream.libyakids.tv/libyakids/index.m3u8",
+  "category": "entertainment"
+ },
+ {
+  "id": "sports-115",
+  "name": "SSC 1",
+  "logo": "https://i.imgur.com/OVuZDI0.png",
+  "description": "القناة الرياضية السعودية الأولى - دوري روشن السعودي",
+  "quality": "4K",
+  "url": "https://ssc-sports.com/live/ssc1/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-116",
+  "name": "SSC 2",
+  "logo": "https://i.imgur.com/sHLiHWC.png",
+  "description": "القناة الرياضية السعودية الثانية - كأس الملك",
+  "quality": "4K",
+  "url": "https://ssc-sports.com/live/ssc2/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-117",
+  "name": "SSC 3",
+  "logo": "https://i.imgur.com/pTVpSP4.png",
+  "description": "القناة الرياضية السعودية الثالثة - دوري أبطال آسيا",
+  "quality": "4K",
+  "url": "https://ssc-sports.com/live/ssc3/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-118",
+  "name": "SSC 4",
+  "logo": "https://i.imgur.com/1.png",
+  "description": "القناة الرياضية السعودية الرابعة - تغطية محلية",
+  "quality": "HD",
+  "url": "https://ssc-sports.com/live/ssc4/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-119",
+  "name": "SSC 5",
+  "logo": "https://i.imgur.com/2.png",
+  "description": "القناة الرياضية السعودية الخامسة - مباريات محلية",
+  "quality": "HD",
+  "url": "https://ssc-sports.com/live/ssc5/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-120",
+  "name": "SSC EXTRA 1",
+  "logo": "https://i.imgur.com/GhXVHyM.png",
+  "description": "القناة الإضافية الأولى - تغطية خاصة",
+  "quality": "4K",
+  "url": "https://ssc-sports.com/live/extra1/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-121",
+  "name": "SSC EXTRA 2",
+  "logo": "https://i.imgur.com/YQf6mlQ.png",
+  "description": "القناة الإضافية الثانية - تغطية خاصة",
+  "quality": "4K",
+  "url": "https://ssc-sports.com/live/extra2/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-122",
+  "name": "SSC News",
+  "logo": "https://i.imgur.com/3.png",
+  "description": "قناة أخبار الرياضة لسعودية",
+  "quality": "HD",
+  "url": "https://ssc-sports.com/live/news/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-123",
+  "name": "MBC 2",
+  "logo": "https://i.imgur.com/1Q9Z1ZB.png",
+  "description": "قناة MBC 2 - أفلام أجنبية مترجمة",
+  "quality": "FHD",
+  "url": "https://shls-mbc2-prod-dub.shahid.net/out/v1/2e2e7c1b2e2e4e1e8e2e7c1b2e2e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-124",
+  "name": "MBC 3",
+  "logo": "https://i.imgur.com/2Q9Z1ZB.png",
+  "description": "قناة MBC 3 - برامج أطفال",
+  "quality": "FHD",
+  "url": "https://shls-mbc3-prod-dub.shahid.net/out/v1/3e3e7c1b3e3e4e1e9e3e7c1b3e3e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-125",
+  "name": "MBC 4",
+  "logo": "https://i.imgur.com/3Q9Z1ZB.png",
+  "description": "قناة MBC 4 - برامج ومسلسلات أجنبية",
+  "quality": "FHD",
+  "url": "https://shls-mbc4-prod-dub.shahid.net/out/v1/4e4e7c1b4e4e4e1e0e4e7c1b4e4e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-126",
+  "name": "MBC Action",
+  "logo": "https://i.imgur.com/4Q9Z1ZB.png",
+  "description": "قناة MBC Action - أفلام ومسلسلات أكشن",
+  "quality": "FHD",
+  "url": "https://shls-mbcaction-prod-dub.shahid.net/out/v1/5e5e7c1b5e5e4e1e1e5e7c1b5e5e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-127",
+  "name": "MBC Max",
+  "logo": "https://i.imgur.com/5Q9Z1ZB.png",
+  "description": "قناة MBC Max - أفلام أجنبية",
+  "quality": "FHD",
+  "url": "https://shls-mbcmax-prod-dub.shahid.net/out/v1/6e6e7c1b6e6e4e1e2e6e7c1b6e6e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-128",
+  "name": "MBC Masr 2",
+  "logo": "https://i.imgur.com/6Q9Z1ZB.png",
+  "description": "قناة MBC مصر 2 - محتوى مصري منوع",
+  "quality": "FHD",
+  "url": "https://shls-masr2-prod-dub.shahid.net/out/v1/7e7e7c1b7e7e4e1e3e7e7c1b7e7e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-129",
+  "name": "MBC Bollywood",
+  "logo": "https://i.imgur.com/7Q9Z1ZB.png",
+  "description": "قناة MBC Bollywood - أفلام ومسلسلات هندية",
+  "quality": "FHD",
+  "url": "https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/8e8e7c1b8e8e4e1e4e8e7c1b8e8e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-130",
+  "name": "MBC Iraq",
+  "logo": "https://i.imgur.com/8Q9Z1ZB.png",
+  "description": "قناة MBC العراق - محتوى عراقي منوع",
+  "quality": "FHD",
+  "url": "https://shls-mbciraq-prod-dub.shahid.net/out/v1/9e9e7c1b9e9e4e1e5e9e7c1b9e9e4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-131",
+  "name": "MBC Persia",
+  "logo": "https://i.imgur.com/9Q9Z1ZB.png",
+  "description": "قناة MBC Persia - أفلام ومسلسلات فارسية",
+  "quality": "FHD",
+  "url": "https://shls-mbcpersia-prod-dub.shahid.net/out/v1/aeae7c1baea4e1e6aeae7c1baea4e1e/index.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-132",
+  "name": "beIN SPORTS 1",
+  "logo": "",
+  "description": "قناة رياضية",
+  "quality": "FHD",
+  "url": "https://stream.sainaertebat.com/hls2/bein1.m3u8",
+  "category": "sports"
+ },
+ {
+  "id": "sports-133",
+  "name": "beIN SPORTS 2",
+  "logo": "",
+  "description": "قناة رياضية",
+  "quality": "FHD",
+  "url": "https://player.tlfaz.com/playlist/TU5XSVUrZnJxTk91eU5YVFl4ektiSDkxdHd5U2JITG9xeU5FVWl0cWdyYW9HZHNJeUtXQ0s5NllGNzdoTStndzdCT2lMbXl4VVoxbzVMQ21GelJNcGc9PQ,,/master.m3u8?token=RGNBS2hNODYzUXJod3FpSFV1NlIweDlsOU5TcXB2R0JpVkkvMHA4V09qeDdsNUFac2wrYXRwWWlxazJ1aE4vcGRHTUlCenMxdWRoYkZVYUdOMUpVdlE9PQ,,",
+  "category": "sports"
+ }
+]
