@@ -29,3 +29,4 @@ use the editor.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
 - IPTV channel list lives in src/data/channels.json (extracted from the original HTML app); edit channels there, not in components.
+- Generate standalone HTML with scripts/export-html.ts from the existing screen and playback engines so the export stays aligned with the app without maintaining a duplicate implementation.
