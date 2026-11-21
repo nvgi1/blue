@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import raw from "@/data/channels.json";
 import { Player } from "@/components/iptv/Player";
 import { useTvNav } from "@/components/iptv/useTvNav";
-import type { Category, Channel } from "@/components/iptv/types";
+import { parseM3U, type Category, type Channel } from "@/components/iptv/types";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -20,7 +19,7 @@ export const Route = createFileRoute("/")({
   component: App,
 });
 
-const channels = raw as Channel[];
+const baseChannels = raw as Channel[];
 const LOGO = "https://www2.0zz0.com/2025/04/20/15/334855513.png";
 const ACTIVATION_CODE = "123456";
 const CATS: { id: Category | "all" | "fav"; label: string; icon: string }[] = [
@@ -28,7 +27,13 @@ const CATS: { id: Category | "all" | "fav"; label: string; icon: string }[] = [
   { id: "arabic", label: "عربية", icon: "📺" },
   { id: "sports", label: "رياضة", icon: "⚽" },
   { id: "news", label: "أخبار", icon: "📰" },
-  { id: "entertainment", label: "ترفيه", icon: "🎬" },
+  { id: "movies", label: "أفلام", icon: "🎬" },
+  { id: "entertainment", label: "منوعات", icon: "🎭" },
+  { id: "kids", label: "أطفال", icon: "🧸" },
+  { id: "documentary", label: "وثائقي", icon: "🌍" },
+  { id: "religious", label: "دينية", icon: "🕌" },
+  { id: "music", label: "موسيقى", icon: "🎵" },
+  { id: "mine", label: "قائمتي", icon: "➕" },
   { id: "fav", label: "المفضلة", icon: "★" },
 ];
 
@@ -42,29 +47,15 @@ function useStored<T>(key: string, init: T) {
 function App() {
   useTvNav();
   const [authed, setAuthed] = useStored("blue-auth", false);
-  return <AnimatePresence mode="wait">{authed ? <Home key="h" onLogout={() => setAuthed(false)} /> : <Login key="l" onOk={() => setAuthed(true)} />}</AnimatePresence>;
+  return authed ? <Home onLogout={() => setAuthed(false)} /> : <Login onOk={() => setAuthed(true)} />;
 }
 
 function Tilt({ children, className = "" }: { children: ReactNode; className?: string }) {
-  const x = useMotionValue(0), y = useMotionValue(0);
-  const rx = useSpring(useTransform(y, [-0.5, 0.5], [12, -12]), { stiffness: 200, damping: 18 });
-  const ry = useSpring(useTransform(x, [-0.5, 0.5], [-12, 12]), { stiffness: 200, damping: 18 });
-  return (
-    <motion.div style={{ rotateX: rx, rotateY: ry, transformPerspective: 900 }} className={`preserve-3d ${className}`}
-      onPointerMove={(e) => { const r = e.currentTarget.getBoundingClientRect(); x.set((e.clientX - r.left) / r.width - 0.5); y.set((e.clientY - r.top) / r.height - 0.5); }}
-      onPointerLeave={() => { x.set(0); y.set(0); }}>{children}</motion.div>
-  );
+  return <div className={className}>{children}</div>;
 }
 
 function Orb() {
-  return (
-    <div className="pointer-events-none relative mx-auto h-64 w-64 [perspective:800px]">
-      <div className="absolute inset-0 animate-orbit rounded-full border-2 border-primary/40 preserve-3d" />
-      <div className="absolute inset-6 animate-orbit rounded-full border border-accent/40 [animation-direction:reverse] [animation-duration:9s]" />
-      <motion.img src={LOGO} alt="Blue IPTV" className="absolute inset-10 h-44 w-44 animate-float object-contain drop-shadow-[0_0_40px_var(--glow)]"
-        initial={{ rotateY: 180, opacity: 0 }} animate={{ rotateY: 0, opacity: 1 }} transition={{ duration: 1.2 }} />
-    </div>
-  );
+  return <img src={LOGO} alt="Blue IPTV" className="mx-auto h-44 w-44 object-contain" />;
 }
 
 function Login({ onOk }: { onOk: () => void }) {
@@ -73,14 +64,14 @@ function Login({ onOk }: { onOk: () => void }) {
   const refs = useRef<(HTMLInputElement | null)[]>([]);
   const submit = () => { if (code.join("") === ACTIVATION_CODE) onOk(); else { setErr(true); setTimeout(() => setErr(false), 600); } };
   return (
-    <motion.main exit={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }} className="grid min-h-screen place-items-center gap-8 p-6 lg:grid-cols-2 lg:px-20">
-      <motion.div initial={{ x: 60, opacity: 0 }} animate={{ x: 0, opacity: 1 }} className="text-center">
+    <main className="grid min-h-screen place-items-center gap-8 p-6 lg:grid-cols-2 lg:px-20">
+      <div className="text-center">
         <Orb />
         <h1 className="mt-4 text-5xl font-black">مرحباً بك في <span className="text-gradient">Blue</span></h1>
-        <p className="mt-3 text-muted-foreground">بث مباشر لأكثر من {channels.length} قناة — على الجوال والتلفاز</p>
-      </motion.div>
+        <p className="mt-3 text-muted-foreground">بث مباشر لأكثر من {baseChannels.length} قناة — على الجوال والتلفاز</p>
+      </div>
       <Tilt className="w-full max-w-md">
-        <motion.div initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, x: err ? [0, -12, 12, -8, 8, 0] : 0 }} className="glass rounded-[2rem] p-8 shadow-glow">
+        <div className="glass rounded-[2rem] p-8 shadow-glow">
           <h2 className="mb-6 text-center text-2xl font-bold">أدخل كود التفعيل</h2>
           <div dir="ltr" className="mb-6 flex justify-center gap-2">
             {code.map((c, i) => (
@@ -97,9 +88,9 @@ function Login({ onOk }: { onOk: () => void }) {
             <a href="https://t.me/BLUEIPTV1" target="_blank" rel="noreferrer" className="tv-focus inline-block rounded-full bg-secondary px-6 py-3 font-semibold">✈ تيليجرام @BLUEIPTV1</a>
           </div>
           <p className="mt-4 text-center text-xs text-muted-foreground">v5.0</p>
-        </motion.div>
+        </div>
       </Tilt>
-    </motion.main>
+    </main>
   );
 }
 
@@ -109,28 +100,33 @@ function Home({ onLogout }: { onLogout: () => void }) {
   const [favs, setFavs] = useStored<string[]>("blue-favs", []);
   const [recent, setRecent] = useStored<string[]>("blue-recent", []);
   const [playing, setPlaying] = useState<Channel | null>(null);
+  const [mine, setMine] = useStored<Channel[]>("blue-mine", []);
+  const [limit, setLimit] = useState(60);
+  const [showAdd, setShowAdd] = useState(false);
+  const channels = useMemo(() => [...mine, ...baseChannels], [mine]);
+  useEffect(() => setLimit(60), [cat, q]);
 
   const list = useMemo(() => channels.filter((c) =>
-    (cat === "all" || (cat === "fav" ? favs.includes(c.id) : c.category === cat)) && c.name.toLowerCase().includes(q.toLowerCase())), [cat, q, favs]);
+    (cat === "all" || (cat === "fav" ? favs.includes(c.id) : c.category === cat)) && c.name.toLowerCase().includes(q.toLowerCase())), [cat, q, favs, channels]);
   const recentList = recent.map((id) => channels.find((c) => c.id === id)).filter((c): c is Channel => !!c);
   const play = (c: Channel) => { setPlaying(c); setRecent([c.id, ...recent.filter((r) => r !== c.id)].slice(0, 12)); };
   const toggleFav = (id: string) => setFavs(favs.includes(id) ? favs.filter((f) => f !== id) : [...favs, id]);
   const featured = recentList[0] ?? channels.find((c) => c.category === "sports") ?? channels[0];
 
   return (
-    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mx-auto max-w-7xl px-4 pb-24 pt-4 md:px-8">
+    <main className="mx-auto max-w-7xl px-4 pb-24 pt-4 md:px-8">
       <header className="sticky top-2 z-30 glass mb-6 flex items-center gap-3 rounded-2xl p-3">
         <img src={LOGO} alt="Blue" className="h-10 w-10 object-contain" />
         <span className="hidden text-xl font-black text-gradient sm:block">Blue IPTV</span>
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="ابحث عن قناة…" className="tv-focus mx-auto w-full max-w-md rounded-xl border border-border bg-secondary px-4 py-2" />
+        <button onClick={() => setShowAdd(true)} className="tv-focus rounded-xl bg-gradient-primary px-4 py-2 text-sm font-bold text-primary-foreground">+ إضافة</button>
         <button onClick={onLogout} className="tv-focus rounded-xl bg-secondary px-4 py-2 text-sm">خروج</button>
       </header>
 
       {featured && (
         <Tilt className="mb-8">
           <section className="glass relative overflow-hidden rounded-[2rem] p-8 md:p-12">
-            <div className="absolute -left-20 -top-20 h-72 w-72 animate-float rounded-full bg-primary/30 blur-3xl" />
-            <div className="relative flex flex-col items-center gap-8 md:flex-row">
+                        <div className="relative flex flex-col items-center gap-8 md:flex-row">
               <div className="flex-1 text-center md:text-right" style={{ transform: "translateZ(40px)" }}>
                 <span className="inline-flex items-center gap-2 rounded-full bg-live/20 px-3 py-1 text-sm font-bold"><span className="h-2 w-2 animate-live rounded-full bg-live" />مباشر الآن</span>
                 <h1 className="mt-4 text-4xl font-black md:text-6xl">{featured.name}</h1>
@@ -155,32 +151,30 @@ function Home({ onLogout }: { onLogout: () => void }) {
       <nav className="mb-6 flex gap-2 overflow-x-auto pb-2">
         {CATS.map((c) => (
           <button key={c.id} onClick={() => setCat(c.id)} className={`tv-focus relative shrink-0 rounded-full px-5 py-2 font-semibold ${cat === c.id ? "text-primary-foreground" : "glass"}`}>
-            {cat === c.id && <motion.span layoutId="pill" className="absolute inset-0 -z-10 rounded-full bg-gradient-primary" />}
+            {cat === c.id && <span className="absolute inset-0 -z-10 rounded-full bg-gradient-primary" />}
             {c.icon} {c.label}
           </button>
         ))}
       </nav>
 
-      <motion.div layout className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-        <AnimatePresence>
-          {list.map((c, i) => (
-            <motion.div key={c.id} layout initial={{ opacity: 0, y: 30, rotateX: -30 }} animate={{ opacity: 1, y: 0, rotateX: 0 }} exit={{ opacity: 0, scale: 0.8 }} transition={{ delay: Math.min(i * 0.02, 0.4) }} className="[perspective:800px]">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {list.slice(0, limit).map((c) => (
+            <div key={c.id}>
               <button onClick={() => play(c)} className="tv-focus glass group relative w-full rounded-2xl p-4 text-center hover:shadow-glow">
                 <span className="absolute left-2 top-2 rounded-md bg-primary/20 px-2 text-xs font-bold text-primary">{c.quality}</span>
                 {favs.includes(c.id) && <span className="absolute right-2 top-2 text-accent">★</span>}
-                <div className="mx-auto mb-3 grid h-20 place-items-center transition-transform duration-500 group-hover:[transform:rotateY(18deg)_scale(1.1)]"><Logo c={c} /></div>
+                <div className="mx-auto mb-3 grid h-20 place-items-center"><Logo c={c} /></div>
                 <div className="truncate font-bold">{c.name}</div>
               </button>
-            </motion.div>
+            </div>
           ))}
-        </AnimatePresence>
-      </motion.div>
+      </div>
+      {list.length > limit && <button onClick={() => setLimit(limit + 60)} className="tv-focus glass mx-auto mt-6 block rounded-xl px-8 py-3 font-bold">عرض المزيد ({list.length - limit})</button>}
       {list.length === 0 && <p className="py-20 text-center text-muted-foreground">{cat === "fav" ? "لم تضف أي قناة للمفضلة بعد" : "لا توجد نتائج"}</p>}
 
-      <AnimatePresence>
+        {showAdd && <AddSource onClose={() => setShowAdd(false)} onAdd={(c) => { setMine([...c, ...mine]); setCat("mine"); setShowAdd(false); }} mineCount={mine.length} onClear={() => setMine([])} />}
         {playing && <Player channel={playing} list={list.length ? list : channels} onClose={() => setPlaying(null)} onSwitch={play} isFav={favs.includes(playing.id)} onFav={() => toggleFav(playing.id)} />}
-      </AnimatePresence>
-    </motion.main>
+    </main>
   );
 }
 
@@ -189,4 +183,35 @@ function Logo({ c, small }: { c: Channel; small?: boolean }) {
   const s = small ? "h-8 w-8 text-xs" : "h-20 w-20 text-lg";
   return bad ? <span className={`${s} grid place-items-center rounded-xl bg-gradient-primary font-black text-primary-foreground`}>{c.name.slice(0, 3)}</span>
     : <img src={c.logo} alt="" loading="lazy" onError={() => setBad(true)} className={`${s} object-contain`} />;
+}
+
+function AddSource({ onClose, onAdd, mineCount, onClear }: { onClose: () => void; onAdd: (c: Channel[]) => void; mineCount: number; onClear: () => void }) {
+  const [url, setUrl] = useState(""); const [name, setName] = useState(""); const [msg, setMsg] = useState(""); const [busy, setBusy] = useState(false);
+  const go = async () => {
+    const u = url.trim(); if (!/^https?:\/\//.test(u)) { setMsg("أدخل رابطاً يبدأ بـ http أو https"); return; }
+    const path = u.split("?")[0]?.toLowerCase() ?? "";
+    if (path.endsWith(".m3u") || path.includes("get.php") || path.includes("type=m3u")) {
+      setBusy(true); setMsg("جارٍ تحميل القائمة…");
+      try { const r = await fetch(u); const list = parseM3U(await r.text()); if (!list.length) throw new Error(); onAdd(list); }
+      catch { setMsg("تعذر تحميل القائمة. تأكد من الرابط أو أن الخادم يسمح بالوصول."); }
+      setBusy(false); return;
+    }
+    onAdd([{ id: `mine-${Date.now()}`, name: name.trim() || "قناتي", logo: "", description: "مضافة يدوياً", quality: "HD", url: u, category: "mine" }]);
+  };
+  return (
+    <div className="fixed inset-0 z-40 grid place-items-center bg-background/80 p-4" onKeyDown={(e) => e.key === "Escape" && onClose()}>
+      <div className="glass w-full max-w-lg rounded-3xl p-6">
+        <h2 className="mb-1 text-2xl font-bold">إضافة قناة أو قائمة</h2>
+        <p className="mb-4 text-sm text-muted-foreground">يدعم روابط m3u و m3u8 و ts و mpd، وقوائم IPTV كاملة.</p>
+        <input autoFocus value={url} onChange={(e) => setUrl(e.target.value)} dir="ltr" placeholder="https://…/playlist.m3u" className="tv-focus mb-3 w-full rounded-xl border border-border bg-secondary px-4 py-3" />
+        <input value={name} onChange={(e) => setName(e.target.value)} placeholder="اسم القناة (اختياري)" className="tv-focus mb-3 w-full rounded-xl border border-border bg-secondary px-4 py-3" />
+        {msg && <p className="mb-3 text-sm text-muted-foreground">{msg}</p>}
+        <div className="flex flex-wrap gap-2">
+          <button disabled={busy} onClick={go} className="tv-focus flex-1 rounded-xl bg-gradient-primary py-3 font-bold text-primary-foreground">إضافة</button>
+          <button onClick={onClose} className="tv-focus rounded-xl bg-secondary px-5 py-3">إلغاء</button>
+          {mineCount > 0 && <button onClick={() => { onClear(); onClose(); }} className="tv-focus rounded-xl bg-destructive px-5 py-3 text-destructive-foreground">حذف قائمتي ({mineCount})</button>}
+        </div>
+      </div>
+    </div>
+  );
 }

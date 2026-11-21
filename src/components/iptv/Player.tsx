@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
 import type { Channel } from "./types";
 
 export function Player({ channel, list, onClose, onSwitch, isFav, onFav }: {
@@ -16,7 +15,12 @@ export function Player({ channel, list, onClose, onSwitch, isFav, onFav }: {
     const onPlay = () => setState("playing");
     const onErr = () => setState("error");
     v.addEventListener("playing", onPlay); v.addEventListener("error", onErr);
-    if (v.canPlayType("application/vnd.apple.mpegurl")) { v.src = channel.url; v.play().catch(() => {}); }
+    const path = channel.url.split("?")[0]?.toLowerCase() ?? "";
+    if (path.endsWith(".mpd")) {
+      import("dashjs").then((d) => { if (dead) return; const pl = d.MediaPlayer().create(); pl.initialize(v, channel.url, true); pl.on("error", () => setState("error")); hls = { destroy: () => pl.reset() }; });
+    } else if (path.endsWith(".ts") || path.endsWith(".flv")) {
+      import("mpegts.js").then(({ default: mpegts }) => { if (dead) return; const pl = mpegts.createPlayer({ type: path.endsWith(".flv") ? "flv" : "mpegts", isLive: true, url: channel.url }); pl.attachMediaElement(v); pl.load(); void pl.play(); pl.on(mpegts.Events.ERROR, () => setState("error")); hls = { destroy: () => pl.destroy() }; });
+    } else if (v.canPlayType("application/vnd.apple.mpegurl")) { v.src = channel.url; v.play().catch(() => {}); }
     else import("hls.js").then(({ default: Hls }) => {
       if (dead) return;
       if (!Hls.isSupported()) { v.src = channel.url; return; }
@@ -42,7 +46,7 @@ export function Player({ channel, list, onClose, onSwitch, isFav, onFav }: {
   });
 
   return (
-    <motion.div className="fixed inset-0 z-50 flex flex-col bg-background" initial={{ opacity: 0, scale: 1.05 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}>
+    <div className="fixed inset-0 z-50 flex flex-col bg-background">
       <div className="relative flex-1 bg-background">
         <video ref={ref} className="h-full w-full" controls playsInline autoPlay />
         {state === "loading" && (
@@ -79,6 +83,6 @@ export function Player({ channel, list, onClose, onSwitch, isFav, onFav }: {
         ))}
         <button className="tv-focus shrink-0 rounded-xl bg-secondary px-4" onClick={() => step(1)}>التالي ›</button>
       </div>
-    </motion.div>
+    </div>
   );
 }
